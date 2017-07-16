@@ -1,39 +1,39 @@
-# Shinobi
+# Gitripper
 
-<img src='inspiration.png' align='right' height='100px'>
+_Rip User Data from Github_
 
-An Awesome boilerplate to get things done with Redux faster by using Raw actions, direct connectors
+```
+       _ _        _
+      (_) |      (_)
+  __ _ _| |_ _ __ _ _ __  _ __   ___ _ __
+ / _` | | __| '__| | '_ \| '_ \ / _ \ '__|
+| (_| | | |_| |  | | |_) | |_) |  __/ |
+ \__, |_|\__|_|  |_| .__/| .__/ \___|_|
+ __/ |            | |   | |
+ |___/            |_|   |_|
+```
 
-#### With
 
-- Sagas
-- Thunks
-- Sass
-- Styled-Components
+<img src='screenshot.png' height='300px' />
 
-#### without
+[Visit Here](gitripper.generaljs.org)
 
-- Constants
-- Selectors
-- ImmutableJS
-- Actions
 
-#### Good Side
+### Setup
 
-##### Raw Actions
+* `npm install -g yarn`
 
-Actions are not defined, use Action json `{ type: 'ACTION', payload }` to dispatch actions
+* Clone Repository, `cd gitripper`
 
-##### Direct Connectors
+* `yarn install`
 
-Components can be directly connected to Redux Store, without creating dedicated Reducer for those Components and these Components can access multiple reducers, making them faster and also reducing their modularity
+### Development
 
-##### Functional Lenses
+* `yarn start` to start local development server.
 
-Lenses are used instead of Selectors because they are faster and has _no types_
+* `yarn build` to create production builds.
 
-#### Dark Side
+* `yarn deploy` to deploy to Github Pages.
 
-⚠️  WARNING should not be used in Projects with large teams and highly scalable projects
 
-_Direct Connectors_ reduces Component modularity and Raw actions can be confusing and clash in projects with large teams.
+_Made with Redux Powered by [Shinobi](https://github.com/rajatsharma305/shinobi)_
