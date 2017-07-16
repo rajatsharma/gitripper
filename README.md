@@ -16,7 +16,7 @@ _Rip User Data from Github_
 
 <img src='screenshot.png' height='300px' />
 
-[Visit Here](gitripper.generaljs.org)
+[Visit Here](http://gitripper.generaljs.org/#/home)
 
 
 ### Setup
