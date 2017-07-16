@@ -1,0 +1,58 @@
+// Basic Profile Details
+
+.user-profile{
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  & .profile-img{
+    height:150px;
+    align-self: flex-start;
+    box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+  }
+
+  & .bio{
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+  }
+  & .name{
+    letter-spacing: 3px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+  }
+  & .stats{
+    line-height: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    & .numbers{
+      font-size: 24px;
+      font-weight: 700;
+    }
+    & .heading{
+      font-size: 12px;
+      color: rgb(197, 197, 198);
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+// Home Page
+.home-page{
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  & .hero{
+    letter-spacing: 3.5px;
+    font-size: 36px;
+  }
+}
