@@ -18,7 +18,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const mapStateToProps = (state) => ({
-  ...pick(['basicProfile'], state.profile)
+  ...pick(['basicProfile', 'repos'], state.profile)
 })
 
 /*  Note: mapStateToProps is where you should use `reselect` to create selectors, ie:

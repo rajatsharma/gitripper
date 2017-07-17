@@ -16,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
+    "url": "git+https://github.com/rajatsharma305/gitripper"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "Rajat Sharma",
   "license": "MIT",
   "dependencies": {
     "better-react-spinkit": "^2.0.0",
@@ -26,6 +26,7 @@
     "express": "^4.14.0",
     "gh-pages": "^1.0.0",
     "gradient-buttons": "^0.1.2",
+    "lodash": "^4.17.4",
     "object-assign": "^4.1.1",
     "promise": "^7.1.1",
     "prop-types": "^15.5.10",

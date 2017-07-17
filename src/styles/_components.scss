@@ -41,7 +41,56 @@
       text-transform: uppercase;
     }
   }
+  & .repositories{
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
 }
+
+
+.repos-cycler{
+  display: flex;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: scroll;
+  & .bio-card {
+    border-bottom: 0.3125rem solid rgba(255,255,255,0);
+    align-self: stretch;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+    white-space: nowrap;
+    & .stats {
+      line-height: 8px;
+      font-family: 'Nunito Sans', sans-serif;
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      & .numbers{
+        padding: 0px 20px 0px 0px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      & .heading{
+        padding: 0px 20px 0px 0px;
+        font-size: 10px;
+        color: rgb(197, 197, 198);
+        text-transform: uppercase;
+      }
+    }
+    & .heading{
+      text-transform: lowercase;
+    }
+  }
+}
+
 
 
 // Home Page

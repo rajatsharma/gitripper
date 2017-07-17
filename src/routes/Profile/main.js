@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {GradientButton} from 'gradient-buttons' //eslint-disable-line
+import BioCard from '../../components/biocard'
 
 class Profile extends Component {
-
   componentDidMount () {
     console.log(this.props.location.pathname)
     this.props.getGithubProfile(this.props.location.pathname)
@@ -31,13 +31,16 @@ class Profile extends Component {
         </div>
         <GradientButton text='Profile'
           clicker={() => window.open(this.props.basicProfile.url)} theme='Scooter' style={{
-            marginTop:'30px',
+            marginTop: '30px',
             borderRadius: '0px',
             textTransform: 'uppercase',
             letterSpacing: '3px',
             boxShadow: '0 8px 16px 0 rgba(46, 61, 73, 0.24)'
           }} />
-        {/* <p className='bio'>{this.props.basicProfile.bio}</p> */}
+        <h1 className='repositories'>Repositories</h1>
+        <div className='repos-cycler'>
+          {this.props.repos.map((x, i) => <BioCard key={i} repo={x} />)}
+        </div>
       </div>}
     </div>
   }
@@ -46,7 +49,8 @@ class Profile extends Component {
 Profile.propTypes = {
   getGithubProfile: PropTypes.func,
   location: PropTypes.object,
-  basicProfile: PropTypes.object
+  basicProfile: PropTypes.object,
+  repos: PropTypes.array
 }
 
 export default Profile
