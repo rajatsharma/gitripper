@@ -1,6 +1,6 @@
 # Gitripper
 
-_Rip User Data from Github_
+_A mere implementation of the Best Public API on the web_
 
 ```
        _ _        _
@@ -16,7 +16,7 @@ _Rip User Data from Github_
 
 <img src='screenshot.png' height='300px' />
 
-[Visit Here](http://gitripper.generaljs.org/#/home)
+[_Rip User Data from Github_](http://gitripper.generaljs.org/#/home)
 
 
 ### Setup
@@ -36,4 +36,4 @@ _Rip User Data from Github_
 * `yarn deploy` to deploy to Github Pages.
 
 
-_Made with Redux Powered by [Shinobi](https://github.com/rajatsharma305/shinobi)_
+_Made with Redux Powered by [Shinobi](https://github.com/rajatsharma305/shinobi) <img src='inspiration.png' height='20px' />_

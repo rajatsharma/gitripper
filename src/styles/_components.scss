@@ -1,29 +1,25 @@
 // Basic Profile Details
 
-.user-profile{
+.user-profile {
   display: flex;
   align-self: stretch;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  & .profile-img{
-    height:150px;
-    align-self: flex-start;
-    box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+  & .bio {
+    font-style: italic;
+    padding: 0;
+    margin: 0;
   }
 
-  & .bio{
-    font-style: italic;
-    padding: 0px;
-    margin: 0px;
-  }
-  & .name{
+  & .name {
     letter-spacing: 3px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
   }
-  & .stats{
+
+  & .stats {
     line-height: 8px;
     font-family: 'Nunito Sans', sans-serif;
     align-self: stretch;
@@ -31,41 +27,53 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    & .numbers{
+
+    & .numbers {
       font-size: 24px;
       font-weight: 700;
     }
-    & .heading{
+
+    & .heading {
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -moz-osx-font-smoothing: grayscale;
       font-size: 12px;
       color: rgb(197, 197, 198);
       text-transform: uppercase;
     }
   }
-  & .repositories{
-    margin: 20px 0px 20px 0px;
-    padding: 20px 0px 20px 0px;
+
+  & .repositories {
+    margin: 20px 0;
+    padding: 20px 0;
     text-transform: uppercase;
     letter-spacing: 1.5px;
   }
 }
 
-
-.repos-cycler{
+.repos-cycler {
   display: flex;
   align-self: stretch;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   overflow-x: scroll;
+
   & .bio-card {
+    cursor: pointer;
     border-bottom: 0.3125rem solid rgba(255,255,255,0);
     align-self: stretch;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
     white-space: nowrap;
+
     & .stats {
       line-height: 8px;
       font-family: 'Nunito Sans', sans-serif;
@@ -73,35 +81,126 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      & .numbers{
-        padding: 0px 20px 0px 0px;
+
+      & .numbers {
+        padding: 0 20px 0 0;
         font-size: 18px;
         font-weight: 700;
       }
-      & .heading{
-        padding: 0px 20px 0px 0px;
+
+      & .heading {
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 0 20px 0 0;
         font-size: 10px;
         color: rgb(197, 197, 198);
         text-transform: uppercase;
       }
     }
-    & .heading{
+
+    & .heading {
       text-transform: lowercase;
+    }
+
+    &:hover {
+      box-shadow: none;
     }
   }
 }
-
-
-
 // Home Page
-.home-page{
+
+.home-page {
   display: flex;
   align-self: stretch;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  & .hero{
+
+  & .hero {
     letter-spacing: 3.5px;
     font-size: 36px;
   }
+}
+
+.language-card {
+  align-self: stretch;
+  display: flex;
+  margin: 40px 0 20px;
+  padding: 20px 0;
+  align-items: center;
+  color: #fcfcfc;
+  cursor: pointer;
+  flex-direction: column;
+  box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+
+  & .title {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 5px;
+  }
+
+  & .content {
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 24px;
+  }
+}
+
+.credits {
+  cursor: pointer;
+  padding: 1em 0 0 0;
+  font-size: 70.25%;
+  font-weight: bold;
+  color: #6a7989;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -moz-osx-font-smoothing: grayscale;
+  align-self: flex-start;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.gradient-overlay {
+  box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+  width: 200px;
+  padding:100px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:cover;
+}
+
+.gradient-overlay::before {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom right, rgba(79, 172, 254, 0.4) 0%, rgba(0, 242, 254, 0.4) 100%) repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.profile-img {
+  height: 150px;
+  align-self: flex-start;
+  box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+}
+
+.loading-text{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
 }

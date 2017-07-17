@@ -3,7 +3,8 @@ import PT from 'prop-types'
 import languageColors from '../constants/languagecolors'
 
 const BioCard = ({ repo }) =>
-  <div className='bio-card' style={{ borderBottomColor:languageColors[repo.language] }}>
+  <div className='bio-card' style={{ borderBottomColor:languageColors[repo.language] }}
+    onClick={() => window.open(repo.html_url)}>
     <p className='heading'>{repo.name}</p>
     <div className='stats'>
       <div>

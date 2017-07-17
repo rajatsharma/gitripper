@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { GradientButton } from 'gradient-buttons'
 import Ruri from '../../components/ruriinput'
+import Credits from '../../components/credits'
 
 const Home = ({ userName, changeUserName, error, ripUser }) =>
   <div className='core-layout-styles'>
@@ -16,6 +17,7 @@ const Home = ({ userName, changeUserName, error, ripUser }) =>
         boxShadow: '0 8px 16px 0 rgba(46, 61, 73, 0.24)'
       }} />
     </div>
+    <Credits />
   </div>
 
 Home.propTypes = {

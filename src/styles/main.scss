@@ -1,33 +1,30 @@
 @import 'base';
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
-// @import '~bootstrap/scss/bootstrap.scss'; //example stylesheet load
-
+@import url( 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'); // @import '~bootstrap/scss/bootstrap.scss'; //example stylesheet load
 // Some best-practice CSS that's useful for most apps
 // Just remove them if they're not what you want
+
 html {
   box-sizing: border-box;
 }
 
-html,
-body {
+body,
+html {
   margin: 0;
   padding: 0;
 }
 
 *,
-*:before,
-*:after {
+*:after,
+*:before {
   box-sizing: inherit;
 }
-
 // Shinobi styles -- remove before using
-
-body{
+body {
   font-family: 'Nunito Sans', sans-serif;
   background: linear-gradient(#3494E6, #EC6EAD); // vice city background
 }
 
-.app{
+.app {
   display: flex;
   // max-height: 100vh;
   min-height: 100vh;
@@ -36,7 +33,7 @@ body{
   flex-direction: column;
 }
 
-.core-layout-styles{
+.core-layout-styles {
   margin: 50px;
   width: 50vw;
   padding: 80px;
@@ -46,4 +43,13 @@ body{
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+}
+
+@media screen and (max-width: 740px) {
+  html {
+    font-size: 16px;
+  }
+  .core-layout-styles {
+    width: 100vw;
+  }
 }

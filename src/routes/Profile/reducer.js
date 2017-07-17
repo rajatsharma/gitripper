@@ -9,7 +9,8 @@ import reducer from '../../futils/reducer'
 // ------------------------------------
 const ACTION_HANDLERS = {
   SHOWBASICPROFILEDETAILS: (s, a) => ({ ...s, basicProfile: a.payload.basicProfile }),
-  SHOWUSERREPOS: (s, a) => ({ ...s, repos: a.payload.repos })
+  SHOWUSERREPOS: (s, a) => ({ ...s, repos: a.payload.repos }),
+  GETFAVLANGUAGE: (s, a) => ({ ...s, favLanguage: a.payload.language })
 }
 
 // ------------------------------------
@@ -17,7 +18,8 @@ const ACTION_HANDLERS = {
 // ------------------------------------
 const initialState = {
   basicProfile: null,
-  repos: []
+  repos: [],
+  favLanguage: undefined
 }
 
 export default reducer(initialState, ACTION_HANDLERS)
