@@ -21,7 +21,7 @@ html {
 // Shinobi styles -- remove before using
 body {
   font-family: 'Nunito Sans', sans-serif;
-  background: linear-gradient(#3494E6, #EC6EAD); // vice city background
+  background: #fcfcfc; // vice city background
 }
 
 .app {
@@ -37,12 +37,13 @@ body {
   margin: 50px;
   width: 50vw;
   padding: 80px;
-  background-color: #fafbfc;
+  background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #000;
   align-items: center;
-  box-shadow: 0 8px 16px 0 rgba(46, 61, 73, 0.16);
+  box-shadow: 12px 12px 12px 12px rgba(46,61,73,.15);
 }
 
 @media screen and (max-width: 740px) {

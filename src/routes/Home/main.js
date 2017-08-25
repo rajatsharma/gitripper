@@ -14,6 +14,7 @@ const Home = ({ userName, changeUserName, error, ripUser }) =>
         borderRadius: '0px',
         textTransform: 'uppercase',
         letterSpacing: '3px',
+        background:'#0072ff',
         boxShadow: '0 8px 16px 0 rgba(46, 61, 73, 0.24)'
       }} />
     </div>
