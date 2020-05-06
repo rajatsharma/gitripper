@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {GradientButton} from 'gradient-buttons' //eslint-disable-line
 import BioCard from '../../components/biocard'
 import LanguageCard from '../../components/language'
 import Credits from '../../components/credits'
@@ -35,26 +34,12 @@ class Profile extends Component {
             <p className='heading'>Following</p>
           </div>
         </div>
-        <GradientButton text='Profile'
-          clicker={() => window.open(this.props.basicProfile.url)} theme='Scooter' style={{
-            marginTop: '30px',
-            borderRadius: '0px',
-            textTransform: 'uppercase',
-            letterSpacing: '3px',
-            boxShadow: '0 8px 16px 0 rgba(46, 61, 73, 0.24)'
-          }} />
+        <button onClick={() => window.open(this.props.basicProfile.url)}>Profile</button>
         <h1 className='repositories'>Repositories</h1>
         <div className='repos-cycler'>
           {this.props.repos.map((x, i) => <BioCard key={i} repo={x} />)}
         </div>
-        <GradientButton text='Explore All'
-          clicker={() => window.open(this.props.basicProfile.url)} theme='Purpink' style={{
-            marginTop: '30px',
-            borderRadius: '0px',
-            textTransform: 'uppercase',
-            letterSpacing: '3px',
-            boxShadow: '0 8px 16px 0 rgba(46, 61, 73, 0.24)'
-          }} />
+        <button onClick={() => window.open(this.props.basicProfile.url)}>Explore All</button>
         <LanguageCard lang={this.props.favLanguage} />
         <Credits />
       </div>) || <LoadingText />}
